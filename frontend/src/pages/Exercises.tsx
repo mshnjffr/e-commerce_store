@@ -21,16 +21,35 @@ const Exercises: React.FC = () => {
                   Use Cody to explore and understand this laptop store application.
                 </p>
                 <div className="exercise-tasks">
-                  <h4>Tasks to complete:</h4>
+                  <h4>Tasks to complete with Cody:</h4>
                   <ul>
-                    <li>Ask Cody to explain the overall architecture of the frontend React application</li>
-                    <li>Use Cody to understand the FastAPI backend structure and main components</li>
-                    <li>Query Cody about the authentication flow between frontend and backend</li>
-                    <li>Ask Cody to explain the shopping cart implementation and state management</li>
-                    <li>Use Cody to understand the database schema and relationships</li>
+                    <li><strong>Understand the frontend React architecture</strong>
+                      <br />📁 <em>Context to provide:</em> <code>frontend/src/App.tsx</code>, <code>frontend/src/components/Layout/Header.tsx</code>, <code>frontend/package.json</code>
+                      <br />💡 <strong>Ask Cody:</strong> "Explain the overall structure of this React application. How are components organized and what routing is used?"
+                    </li>
+                    
+                    <li><strong>Explore the FastAPI backend structure</strong>
+                      <br />📁 <em>Context to provide:</em> <code>backend/main.py</code>, <code>backend/models.py</code>, <code>backend/services.py</code>
+                      <br />💡 <strong>Ask Cody:</strong> "Walk me through this FastAPI backend structure. What are the main components and how do they work together?"
+                    </li>
+                    
+                    <li><strong>Learn about the authentication system</strong>
+                      <br />📁 <em>Context to provide:</em> <code>backend/auth.py</code>, <code>frontend/src/contexts/AuthContext.tsx</code>, <code>frontend/src/pages/Login.tsx</code>
+                      <br />💡 <strong>Ask Cody:</strong> "Explain how authentication works in this app. How does the frontend handle JWT tokens and protected routes?"
+                    </li>
+                    
+                    <li><strong>Understand the shopping cart implementation</strong>
+                      <br />📁 <em>Context to provide:</em> <code>frontend/src/contexts/CartContext.tsx</code>, <code>frontend/src/pages/Cart.tsx</code>, <code>frontend/src/components/Laptop/LaptopCard.tsx</code>
+                      <br />💡 <strong>Ask Cody:</strong> "How does the shopping cart work? Explain the state management and how items are added, removed, and persisted."
+                    </li>
+                    
+                    <li><strong>Explore the database schema and API endpoints</strong>
+                      <br />📁 <em>Context to provide:</em> <code>backend/database.py</code>, <code>backend/models.py</code>, <code>frontend/src/services/api.ts</code>
+                      <br />💡 <strong>Ask Cody:</strong> "Explain the database structure and API endpoints. How are laptops, users, and orders stored and retrieved?"
+                    </li>
                   </ul>
                 </div>
-                <div className="difficulty-level junior"> Ask Questions? </div>
+
               </div>
             </div>
 
@@ -87,7 +106,7 @@ const Exercises: React.FC = () => {
                   </ul>
                   
                 </div>
-                <div className="difficulty-level senior">💥 Critical Bug Fix</div>
+
               </div>
             </div>
 
@@ -148,20 +167,10 @@ const Exercises: React.FC = () => {
                     </li>
                   </ul>
                   
-                  <div className="tips-box">
-                    <h4>💡 Beginner Tips for React Development:</h4>
-                    <ul>
-                      <li><strong>Start small:</strong> Get the heart icon showing first, then add click functionality</li>
-                      <li><strong>Use console.log:</strong> Add logging to see when functions are called and what data you have</li>
-                      <li><strong>Check localStorage:</strong> Open DevTools → Application → Local Storage to see stored data</li>
-                      <li><strong>React useState:</strong> State changes trigger re-renders automatically</li>
-                      <li><strong>Conditional rendering:</strong> Use ternary operators like <code>&#123;isFavorite ? '❤️' : '🤍'&#125;</code></li>
-                      <li><strong>Event handlers:</strong> Always pass functions, not function calls: <code>onClick=&#123;handleClick&#125;</code></li>
-                    </ul>
-                  </div>
+
                   
                 </div>
-                <div className="difficulty-level junior">❤️ Beginner React</div>
+
               </div>
             </div>
 
@@ -221,21 +230,10 @@ const Exercises: React.FC = () => {
                     </li>
                   </ul>
                   
-                  <div className="tips-box">
-                    <h4>💡 Pro Tips for Working with Cody:</h4>
-                    <ul>
-                      <li><strong>Always provide context:</strong> Include the files you're working with or want to follow as examples</li>
-                      <li><strong>Be specific:</strong> Instead of "add mice" say "create MouseCard component based on LaptopCard"</li>
-                      <li><strong>Ask for explanations:</strong> "Explain why this pattern works" helps you learn</li>
-                      <li><strong>Follow up:</strong> Ask "What could go wrong?" or "What should I test?"</li>
-                      <li><strong>Copy existing patterns:</strong> It's faster and more consistent than creating from scratch</li>
-                      <li><strong>Test incrementally:</strong> Get each step working before moving to the next</li>
-                      <li><strong>Watch for type mismatches:</strong> When copying code, TypeScript functions expecting specific types (like Laptop) won't work with different types (like Mouse)</li>
-                    </ul>
-                  </div>
+
                   
                 </div>
-                <div className="difficulty-level intermediate">🧑‍💻 Code Generation</div>
+
               </div>
             </div>
 
@@ -300,33 +298,13 @@ const Exercises: React.FC = () => {
                   </div>
                 
                 </div>
-                <div className="difficulty-level intermediate">🔗 API Integration</div>
+
               </div>
             </div>
 
           </div>
 
-          <div className="tips-section">
-            <h2>💡 Tips for Effective AI Assistant Usage</h2>
-            <div className="tips-grid">
-              <div className="tip-card">
-                <h4>Be Specific</h4>
-                <p>Ask detailed questions with context about what you're trying to understand or achieve.</p>
-              </div>
-              <div className="tip-card">
-                <h4>Iterate</h4>
-                <p>Follow up with clarifying questions to dive deeper into complex topics.</p>
-              </div>
-              <div className="tip-card">
-                <h4>Verify</h4>
-                <p>Always review and test the suggestions provided by AI assistants.</p>
-              </div>
-              <div className="tip-card">
-                <h4>Learn</h4>
-                <p>Use AI responses as learning opportunities to understand underlying concepts.</p>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
